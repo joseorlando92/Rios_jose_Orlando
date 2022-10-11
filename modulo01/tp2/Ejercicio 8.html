@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"></head>
+<body>
+<script>
+const numeros = [100];
+let cadena,numero,encontro=true;
+for (let index = 0; index < 100; index++) {
+    numero = Math.round(Math.random()*100);;
+    encontro = true;
+    if (noExiste(numero)) {
+        numeros[index] = numero;    
+    }else{
+        index--;
+    }
+}
+for (let index = 0; index < numeros.length; index++) {
+    //const element = numeros[index];
+    document.writeln(numeros[index]);
+}
+// Esta funcion verifica que el numero aleatorio no exista
+function noExiste(numero) {
+    for (let index = 0; index < numeros.length; index++) {
+        const element = numeros[index];
+        if (encontro) {
+            if (element==numero) {
+                return false;
+                encontro=false;
+            }else{
+                return true;
+            }
+        }
+        
+    }
+}
+</script>
+</body>
+</html>
