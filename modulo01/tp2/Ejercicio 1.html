@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ejercicio 1 </title> 
+</head>
+<body>
+<script>
+var valores = ["verdadero", "false", "2", "hola",
+"mundo", "3", "char"];
+var cant,index , indexMayor=0,cantCaracteres = 0;
+indexMayor = indexMayor;
+for (let index = 0; index < valores.length; index++) {
+    const element = valores[index];
+    if (cantCaracteres < element.length) {
+        cantCaracteres = element.length
+        indexMayor = index;
+    }
+}
+document.writeln("1. Mayor = ",valores[indexMayor]);  </script><br>
+<script>  
+document.writeln("<br>2. Imprimir los elementos de menor a mayor cantidad de letras: ", valores.sort(function(a,b){return a.length - b.length}),"<br>");
+var valores = ["verdadero", false, 2, "hola","mundo", 3, "char"];
+let a=0,b=0;
+for (let index = 0; index < valores.length; index++) {
+    const element = valores[index];
+    if (typeof valores[index]==="number") {
+        if (a==0) {
+            a = valores[index];
+        }else{
+            if (b==0) {
+                b = valores[index];
+            }
+        }
+    }
+}
+document.writeln("<br>3. Operaciones con los numeros ");
+document.writeln("<br>. Suma: ",a+b );
+document.writeln("<br>. Resta: ", a-b);
+document.writeln("<br>. Multiplicacion: ", a*b);
+document.writeln("<br>. Division: ", a/b);
+
+</script>
+</body>
+</html>
