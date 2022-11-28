@@ -1,4 +1,4 @@
-Use ventas;
+Use sistema;
 -- Ejercicio 1: Consultas sql
 
 -- Consulta Nro 1.	
